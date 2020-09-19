@@ -10,9 +10,9 @@ def get_version(filename):
 
 
 setup(
-    name='Mopidy-Party',
-    version=get_version('mopidy_party/__init__.py'),
-    url='https://github.com/Lesterpig/mopidy-party',
+    name='Mopidy-Cabinet',
+    version=get_version('mopidy_cabinet/__init__.py'),
+    url='https://github.com/jkajan/mopidy-party',
     license='Apache License, Version 2.0',
     author='Loick Bonniot',
     author_email='pip@lesterpig.com',
@@ -28,7 +28,7 @@ setup(
     ],
     entry_points={
         'mopidy.ext': [
-            'party = mopidy_party:Extension',
+            'cabinet = mopidy_cabinet:Extension',
         ],
     },
     classifiers=[
